@@ -5,7 +5,9 @@ import UserInfo from '../containers/UserInfo';
 export default () => (
   <div>
     <h2>List of users:</h2>
-    <UsersList />
-    <UserInfo />
+    <div style={{display: 'flex'}}>
+      <UsersList />
+      <UserInfo />
+    </div>
   </div>
 );
