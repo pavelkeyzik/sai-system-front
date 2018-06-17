@@ -4,6 +4,8 @@
   max-height: 100vh;
   width: 88px;
   display: flex;
+  position: sticky;
+  top: 0;
   flex-direction: column;
   align-items: center;
   border-right: 1px solid #f0f3f3;
