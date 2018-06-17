@@ -1,16 +1,12 @@
-const usersReducer = (state = {}, action) => {
-  return [
-    {
-      id: 1,
-      name: 'Pavel',
-      height: 182
-    },
-    {
-      id: 2,
-      name: 'Kate',
-      height: 157
-    }
-  ];
+const usersReducer = (state = {isLoading: true}, action) => {
+  switch(action.type) {
+    case 'USERS_IS_LOADING':
+      return {...state, isLoading: true};
+    case 'USERS_IS_LOADED':
+      return {...state, isLoading: false, list: action.payload};
+    default:
+      return state;
+  }
 };
 
 export default usersReducer;
