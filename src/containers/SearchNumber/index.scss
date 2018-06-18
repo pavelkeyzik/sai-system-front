@@ -1,0 +1,25 @@
+.search-number {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  height: 80px;
+
+  &__input {
+    display: flex;
+    border: unset;
+    background: unset;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #cfcfcf;
+
+    &_invalid {
+      color: #8277aa;
+    }
+
+    &_valid {
+      color: #32cd32;
+    }
+  }
+}
