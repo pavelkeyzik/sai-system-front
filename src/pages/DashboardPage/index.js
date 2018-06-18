@@ -3,6 +3,7 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import {loadInformationAboutNumber} from '../../actions/carNumber';
 import SearchNumber from '../../containers/SearchNumber';
+import ListOfPenalties from '../../containers/ListOfPenalties';
 import CheckNumberLoader from '../../components/CheckNumberLoader';
 import WriteNumber from '../../components/WriteNumber';
 
@@ -21,9 +22,7 @@ class DashboardPage extends Component {
       return (<CheckNumberLoader />);
     }
     return (
-      <ul>
-        {this.props.carNumber.informationList.map(i => <li key={i.id}>{i.name}</li>)}
-      </ul>
+      <ListOfPenalties list={this.props.carNumber.informationList} />
     );
   }
 }

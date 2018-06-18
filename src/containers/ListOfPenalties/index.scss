@@ -1,0 +1,48 @@
+.list-of-penalties {
+  background: #fff;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #f0f3f3;
+  border-bottom: 1px solid #f0f3f3;
+  padding: 20px 30px;
+  max-width: 100%;
+
+  &__table-item,
+  &__table-header {
+    display: grid;
+    grid-template-columns: 60px 3fr 1fr 1fr;
+  }
+
+  &__table-heder {
+    display: flex;
+  }
+
+  &__table-item {
+    height: 60px;
+    border-bottom: 2px solid #f3f5f7;
+    color: #333;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &:nth-child(2n) {
+      background: #f8f9fb;
+    }
+  }
+
+  &__table-header {
+    background: #f8f9fb;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 46px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}

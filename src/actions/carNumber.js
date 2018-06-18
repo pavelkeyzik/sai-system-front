@@ -19,11 +19,15 @@ export const loadInformationAboutNumber = (number) => {
       dispatch(informationAboutNumberIsLoadedSuccessful([
         {
           id: 1,
-          name: 'Штраф за непристёгнутый ремень'
+          name: 'Штраф за непристёгнутый ремень',
+          date: new Date().toUTCString(),
+          paid: true
         },
         {
           id: 2,
-          name: 'Штраф за отсутствие знака 70'
+          name: 'Штраф за отсутствие знака 70',
+          date: new Date().toUTCString(),
+          paid: false
         }
       ]));
     }, 2000);
